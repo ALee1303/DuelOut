@@ -42,16 +42,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Particles\Particle.cs" />
-    <Compile Include="Particles\ParticleManager.cs" />
-    <Compile Include="Particles\ParticleSystem.cs" />
     <Compile Include="Sprite\DrawableAnimatableSprite.cs" />
     <Compile Include="Sprite\DrawableSprite.cs" />
     <Compile Include="Sprite\Sprite.cs" />
     <Compile Include="Sprite\CelAnimationManager.cs" />
     <Compile Include="Sprite\SpriteBatchExtensionMethods.cs" />
-    <Compile Include="State\GameState.cs" />
-    <Compile Include="State\GameStateManager.cs" />
     <Compile Include="Util\FPS.cs" />
     <Compile Include="Util\GameConsole.cs" />
     <Compile Include="Util\InputHandler.cs" />
@@ -72,59 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Assets\20px_1trans.png" />
-    <Content Include="Content\Assets\Audio\GAMEBEGINNING.WAV" />
-    <Content Include="Content\Assets\Audio\GHOSTEATEN.WAV" />
-    <Content Include="Content\Assets\Audio\killed.wav" />
-    <Content Include="Content\Assets\Audio\pacchomp.wav" />
-    <Content Include="Content\Assets\food.png" />
-    <Content Include="Content\Assets\GhostHit.png" />
-    <Content Include="Content\Assets\meshes\ton_lowpoly_x\ton2.jpg" />
-    <Content Include="Content\Assets\Monsters\baron1.png" />
-    <Content Include="Content\Assets\Monsters\baron1Cell.png" />
-    <Content Include="Content\Assets\Monsters\Baron\baronWalkFront01.png" />
-    <Content Include="Content\Assets\Monsters\Baron\baronWalkFront02.png" />
-    <Content Include="Content\Assets\Monsters\Baron\baronWalkFront03.png" />
-    <Content Include="Content\Assets\Monsters\Baron\baronWalkFront04.png" />
-    <Content Include="Content\Assets\obj\PSM\XNA4ContentContent.contentproj.FileListAbsolute.txt" />
-    <Content Include="Content\Assets\pacmanDie.png" />
-    <Content Include="Content\Assets\pacmanSingle.png" />
-    <Content Include="Content\Assets\pacmanSingle_sm.png" />
-    <Content Include="Content\Assets\pacmanTwo.png" />
-    <Content Include="Content\Assets\pacmanTwo_sm.png" />
-    <Content Include="Content\Assets\PurpleGhost.png" />
-    <Content Include="Content\Assets\RedGhost.png" />
-    <Content Include="Content\Assets\shot.png" />
-    <Content Include="Content\Assets\SpriteMarker.png" />
-    <Content Include="Content\Assets\TealGhost.png" />
-    <Content Include="Content\Assets\Textures\titleIntro.png" />
-    <Content Include="Content\Assets\Textures\Transparent25Percent.png" />
-    <Content Include="Content\Assets\XavierLuigi.png" />
-    <Content Include="Content\Assets\XavierMario.PNG" />
-    <Content Include="Content\SpriteMarker.png" />
     <Content Include="OpenTK.dll.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\Arial.spritefont" />
-    <None Include="Content\Assets\Arial.spritefont" />
-    <None Include="Content\Assets\meshes\monkey.fbx" />
-    <None Include="Content\Assets\meshes\ton_lowpoly_x\ton3_low.x" />
-    <None Include="Content\Assets\obj\PSM\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="Content\Assets\obj\PSM\XNA4ContentContent.contentprojResolveAssemblyReference.cache" />
-    <None Include="Content\Assets\obj\Windows\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="Content\Assets\SpriteFont1.spritefont" />
-    <None Include="Content\Assets\Textures\CatTexture.tga" />
-    <None Include="Content\Assets\Textures\checker.tga" />
-    <None Include="Content\Assets\Textures\DogTexture.tga" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Assets\obj\PSM\TempPE\" />
-    <Folder Include="Content\Assets\obj\Windows\TempPE\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

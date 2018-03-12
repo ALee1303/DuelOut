@@ -22,7 +22,6 @@ namespace Breakout
         public bool Reflected { get; private set; }
         public static float BallRadius;
 
-        GameConsole console;
 
         public Ball(Game game, BallState state, TeamColor team)
             : base(game)
@@ -37,14 +36,6 @@ namespace Breakout
             else
                 this.color = Color.Red;
 
-
-            //console check
-            console = (GameConsole)this.Game.Services.GetService(typeof(IGameConsole));
-            if (console == null) //ohh no no console
-            {
-                console = new GameConsole(this.Game);
-                this.Game.Components.Add(console);  //add a new game console to Game
-            }
 #if DEBUG
             this.ShowMarkers = true;
 #endif

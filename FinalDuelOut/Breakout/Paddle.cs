@@ -13,10 +13,6 @@ namespace Breakout
 {
     public class Paddle : DrawableSprite, IBallSpawner
     {
-        //Service Dependencies
-        GameConsole console;
-        //random for collision funness
-        //Dependencies
         PaddleController controller;
 
         public TeamColor Team { get; private set; }
@@ -38,13 +34,6 @@ namespace Breakout
                 this.color = Color.Blue;
             }
 
-            //console check
-            console = (GameConsole)this.Game.Services.GetService(typeof(IGameConsole));
-            if (console == null) //ohh no no console
-            {
-                console = new GameConsole(this.Game);
-                this.Game.Components.Add(console);  //add a new game console to Game
-            }
 
         }
 
@@ -140,7 +129,6 @@ namespace Breakout
             //Very simple collision with ball only uses rectangles
             if (collisionRectangle.Intersects(ball.LocationRect))
             {
-                console.GameConsoleWrite("Paddle collision ballLoc:" + ball.Location + " paddleLoc:" + this.Location.ToString());
                 return true;
             }
             return false;

@@ -15,7 +15,7 @@ namespace Breakout.Item
         public Baby(Game game, Block block)
             : base(game, block)
         {
-            Gravity = 5.0f;
+            Gravity = 2.0f;
         }
 
         public override void TriggerEffect()

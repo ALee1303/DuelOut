@@ -17,7 +17,6 @@ namespace Breakout
 
         //Services
         InputHandler input;
-        GameConsole console;
 
         //Components
         BlockManager bm;
@@ -37,11 +36,6 @@ namespace Breakout
 
             //Services
             input = new InputHandler(this);
-            console = new GameConsole(this);
-            this.Components.Add(console);
-#if RELEASE
-            console.ToggleConsole(); //close the console
-#endif
             this.Components.Add(input);
 
             score = new ScoreManager(this);
