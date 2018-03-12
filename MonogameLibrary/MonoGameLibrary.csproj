@@ -42,20 +42,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Events\Event.cs" />
-    <Compile Include="Events\EventArgs.cs" />
-    <Compile Include="Events\EventData.cs" />
-    <Compile Include="GameComponents\Audio\SoundSimpleComponent.cs" />
-    <Compile Include="GameComponents\Player\PlayerController.cs" />
-    <Compile Include="Network\ClientInfo.cs" />
-    <Compile Include="Network\GameClient.cs" />
-    <Compile Include="Network\GameNetwork.cs" />
-    <Compile Include="Network\GameServer.cs" />
-    <Compile Include="Network\Serializer.cs" />
     <Compile Include="Particles\Particle.cs" />
     <Compile Include="Particles\ParticleManager.cs" />
     <Compile Include="Particles\ParticleSystem.cs" />
-    <Compile Include="Sound\SoundManager.cs" />
     <Compile Include="Sprite\DrawableAnimatableSprite.cs" />
     <Compile Include="Sprite\DrawableSprite.cs" />
     <Compile Include="Sprite\Sprite.cs" />
@@ -63,12 +52,6 @@
     <Compile Include="Sprite\SpriteBatchExtensionMethods.cs" />
     <Compile Include="State\GameState.cs" />
     <Compile Include="State\GameStateManager.cs" />
-    <Compile Include="ThreeD\Camera.cs" />
-    <Compile Include="ThreeD\FirstPersonCamera.cs" />
-    <Compile Include="ThreeD\Mesh.cs" />
-    <Compile Include="ThreeD\QuadDrawer.cs" />
-    <Compile Include="ThreeD\QuadSprite.cs" />
-    <Compile Include="ThreeD\SkyBox.cs" />
     <Compile Include="Util\FPS.cs" />
     <Compile Include="Util\GameConsole.cs" />
     <Compile Include="Util\InputHandler.cs" />
@@ -142,8 +125,6 @@
   <ItemGroup>
     <Folder Include="Content\Assets\obj\PSM\TempPE\" />
     <Folder Include="Content\Assets\obj\Windows\TempPE\" />
-    <Folder Include="GameComponents\ShotManager\" />
-    <Folder Include="GameComponents\Spawner\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
