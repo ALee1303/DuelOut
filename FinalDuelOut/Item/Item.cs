@@ -49,7 +49,7 @@ namespace Breakout.Item
         {
             //Y bottom
             if (Location.Y >
-                    GraphicsDevice.Viewport.Height)
+                    GraphicsDevice.Viewport.Height || Location.Y < 0-this.Rectagle.Height)
                 return false;
             return true;
         }

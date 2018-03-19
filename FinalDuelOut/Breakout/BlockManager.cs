@@ -105,7 +105,7 @@ namespace Breakout
                 for (int j = 0; j < ballManager.Balls.Count(); j++)
                 {
                     Ball ball = ballManager.Balls[j];
-                    if (block.Intersects(ball)) //chek rectagle collision between ball and current block 
+                    if (block.State == BlockState.Normal && block.Intersects(ball)) //chek rectagle collision between ball and current block 
                     {
                         //checks hit
                         block.HitByBall(ball);
