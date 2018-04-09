@@ -49,6 +49,7 @@ namespace Breakout
         /// </summary>
         public virtual void LoadLevel()
         {
+            Blocks.Clear();
             int width = 24;
             int height = 4;
             Random r = new Random();
@@ -69,6 +70,7 @@ namespace Breakout
         private void CreateBlockArrayByWidthAndHeight(int width, int height, int margin)
         {
             Block b;
+            winScore = 0;
             //Create Block Array based on with and hieght
             for (int w = 0; w < width; w++)
             {
