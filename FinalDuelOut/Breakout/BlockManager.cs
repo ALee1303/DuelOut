@@ -24,7 +24,6 @@ namespace Breakout
 
         Queue<int> caseQueue;
 
-
         /// <summary>
         /// BlockManager hold a list of blocks and handles updating, drawing a block collision
         /// </summary>
@@ -100,12 +99,10 @@ namespace Breakout
             for (int i = Blocks.Count() - 1; i >= 0; i--)
             {
                 Block block = Blocks[i];
-                RemoveDisabledBlocks(block);
-                block.Update(gameTime);
-                for (int j = 0; j < ballManager.Balls.Count(); j++)
+                for (int j = ballManager.Balls.Count() - 1; j >= 0; j--)
                 {
                     Ball ball = ballManager.Balls[j];
-                    if (block.State == BlockState.Normal && block.Intersects(ball)) //chek rectagle collision between ball and current block 
+                    if (block.Intersects(ball)) //chek rectagle collision between ball and current block 
                     {
                         //checks hit
                         block.HitByBall(ball);
@@ -115,7 +112,13 @@ namespace Breakout
                             ball.ReflectFromBlock(block);
                         }
                     }
+                    if (block.State == BlockState.Broken)
+                    {
+                        RemoveDisabledBlocks(block);
+                        break;
+                    }
                 }
+                block.Update(gameTime);
             }
         }
         /// <summary>
@@ -125,16 +128,15 @@ namespace Breakout
         private void RemoveDisabledBlocks(Block block)
         {
             //remove disabled blocks
-            if (block.State == BlockState.Broken)
-            {
-                TeamColor team = block.ScoredTeam;
-                IItem spawnedItem = block.SpawnItem();
-                if (spawnedItem != null)
-                    itemManager.AddItem(spawnedItem);
-                Blocks.Remove(block);
-                ScoreManager.Score[(int)team]++;
-                currentScore++;
-            }
+
+            TeamColor team = block.ScoredTeam;
+            IItem spawnedItem = block.SpawnItem();
+            if (spawnedItem != null)
+                itemManager.AddItem(spawnedItem);
+            Blocks.Remove(block);
+            ScoreManager.Score[(int)team]++;
+            currentScore++;
+
         }
 
         public override void Draw(GameTime gameTime)
