@@ -1,10 +1,10 @@
 # DuelOut
 -----------
-DuelOut is a 2 player game made in Monogame. It is an original creation adapted from simple Breakout content provided by [Jeff Myers](https://github.com/dsp56001/MonogameBreakOut).
+DuelOut is a 2 player game made in Monogame. It is an original creation adapted from simple Breakout content provided by [Jeff Meyers](https://github.com/dsp56001/MonogameBreakOut).
 
 ## Description
 ---------------
-This project includes running build of the game and also a Monogame Visual Studio project for the game with the needed scripts. It also includes custom Monogame Library, once again, provided by [Jeff Myers](https://github.com/dsp56001/MonogameBreakOut/tree/master/BreakoutTest/MonoGameLibrary).
+This project includes running build of the game and also a Monogame Visual Studio project for the game with the needed scripts. It also includes custom Monogame Library, once again, provided by [Jeff Meyers](https://github.com/dsp56001/MonogameBreakOut/tree/master/BreakoutTest/MonoGameLibrary).
 
 ## Getting Started
 These instructions will help you deploy the running build or Monagame Visual Studio project on your hard drive.
@@ -56,7 +56,7 @@ Please make your branch and submit a pull request for contribution. Describe cha
 
 ## Acknowledgements
 ________________
-* Jeff Myers for resources and libraries
+* Jeff Meyers for resources and libraries
 * [Gloobus Studio](https://gloobus.net/baby-zombie/) for Zombie Baby texture.
 * [Comodo777](https://www.dreamstime.com/comodo777_info) for Ballon Baby texture.
 * Google image for Poop texture.
