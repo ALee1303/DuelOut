@@ -49,6 +49,7 @@ namespace Breakout
         /// </summary>
         public virtual void LoadLevel()
         {
+            currentScore = 0;
             Blocks.Clear();
             int width = 24;
             int height = 4;

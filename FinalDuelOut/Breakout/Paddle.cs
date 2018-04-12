@@ -33,16 +33,12 @@ namespace Breakout
             {
                 this.color = Color.Blue;
             }
-
-
         }
 
         protected override void LoadContent()
         {
             this.spriteTexture = this.Game.Content.Load<Texture2D>("paddleSmall");
-#if DEBUG
-            this.ShowMarkers = true;
-#endif
+
             SetInitialLocation();
             base.LoadContent();
         }
