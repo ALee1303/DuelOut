@@ -1,6 +1,8 @@
 # DuelOut
 DuelOut is a 2 player version of Breakout game made in Monogame.
 
+![png](https://i.imgur.com/KPKvd0E.png)
+
 ## Overview
 ------------
 This was one of the final project done during my study in Columbia College. The project was created in agaile developement spanning for 5 weeks.
