@@ -71,10 +71,6 @@ Red and Blue player start from the opposite side and must break the brick in the
 * Player who stays alive longer wins.
 * When all blocks are cleared, player with higher point wins.
 
-## Contributing
-________________
-Please make your branch and submit a pull request for contribution. Describe changes made on README.md
-
 ## Acknowledgements
 ________________
 * Jeff Meyers for resources and libraries
